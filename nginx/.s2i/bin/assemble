@@ -1,0 +1,9 @@
+echo "ASSEMBLE START: INVOKING ORIGINAL ASSEMBLE..."
+
+/usr/libexec/s2i/assemble
+
+echo "NOW ADDING SOME NEW THINGS. Creating info page..."
+
+DATE=$(date "+%Y-%m-%d")
+echo "Page created on $DATE" >> info.html
+echo "Enjoy your app!!!" >> info.html
