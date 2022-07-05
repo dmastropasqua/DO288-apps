@@ -1,0 +1,7 @@
+echo "START CUSTOM ASSEMBLE. FIRST INVOKING OLD ASSEMBLE..."
+/usr/libexec/s2i/assemble
+echo "OLD ASSEMBLE DONE. NOW GENERATING INFO PAGE..."
+DATE=$(date "+%Y-%m-%d")
+echo "This beautiful page brought to you on $DATE" >> info.html
+echo "Per aspera ad astra" >> info.html
+echo "INFO PAGE SUCCESSFULLY GENERATED!!! BYE..."
